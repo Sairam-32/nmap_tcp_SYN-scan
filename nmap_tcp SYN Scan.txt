@@ -1,0 +1,62 @@
+C:\Users\saira>nmap -sS 192.168.1.34
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-05-26 21:36 India Standard Time
+Nmap scan report for 192.168.1.34
+Host is up (0.00034s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+7070/tcp open  realserver
+
+Nmap done: 1 IP address (1 host up) scanned in 0.42 seconds
+
+Network Scan Report
+Date: 26 May 2025
+Time: 21:36 IST
+Scanner: Nmap v7.95
+Scan Type: SYN Scan (-sS)
+Target IP Address: 192.168.1.34
+
+1. Scan Summary
+Scan Type: TCP SYN Scan
+
+Host Status: Host is up (0.00034s latency)
+
+Total Ports Scanned: 1000
+
+Open Ports Detected: 6
+
+Closed Ports: 994 (TCP)
+
+2. Open Ports and Services
+Port	Protocol	State	Service
+135	TCP	Open	msrpc
+139	TCP	Open	netbios-ssn
+445	TCP	Open	microsoft-ds
+902	TCP	Open	iss-realsecure
+912	TCP	Open	apex-mesh
+7070	TCP	Open	realserver
+
+3. Observations
+Port 135, 139, 445: These are commonly used by Windows networking services and may pose risks if exposed to public networks.
+
+Port 902 and 912: Typically associated with remote management or specialized applications; ensure these are secured and necessary.
+
+Port 7070: Often used by streaming or media servers (e.g., RealNetworks); verify the necessity and secure configuration.
+
+4. Recommendations
+Verify Services: Confirm that all listed services are required for operational needs.
+
+Restrict Access: Apply appropriate firewall rules to limit access to these ports to trusted IP addresses.
+
+Regular Monitoring: Continuously monitor the services running on these ports for any unusual activity.
+
+Patch Management: Ensure the system and applications are up to date with the latest security patches.
+
+Prepared By:
+Saira (User)
+Security Analyst
+Date: 26 May 2025
